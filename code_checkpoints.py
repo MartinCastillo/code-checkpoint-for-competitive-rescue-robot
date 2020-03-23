@@ -3,7 +3,6 @@ import atexit
 import os
 from sys import executable
 from file.file import File
-
 from time import sleep
 
 path_stat_file = r'{}'.format(os.getcwd()+"\\"+os.path.basename(__file__))
@@ -58,3 +57,4 @@ if(__name__ == '__main__'):
     fase2()
     fase3()
     os._exit(0)
+    
