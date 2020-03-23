@@ -32,7 +32,7 @@ def check_state(*args,**kargs):
         return wrapper
     return decorator
 
-#E.g:
+##########################E.g:###############################
 @check_state(target_stat=1,next_stat=2)
 def fase1():
     for i in range(10):
