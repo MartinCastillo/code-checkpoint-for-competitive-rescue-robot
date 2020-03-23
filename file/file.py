@@ -4,7 +4,7 @@
 
 import os
 """Contiene una variable stat, que se guarda en el archivo stat.txt, acompañando al código __main__,
-es decir que si importa la clase de otro código stat.txt acompaña al que  importa y no este, que
+es decir que si importa la clase desde otro código, stat.txt acompaña al que  importa y no este, que
 como property se actualiza en tiempo real"""
 class File:
     def __init__(self,stat_default = 1,_status_file_name="stat.txt"):
