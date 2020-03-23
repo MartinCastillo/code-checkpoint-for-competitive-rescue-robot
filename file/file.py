@@ -17,9 +17,7 @@ class File:
     def get_stat(self):
         #Obtiene variable del archivo
         with open(self._path_stat_file, 'r') as f:
-            #https://www.w3schools.com/python/python_file_open.asp
             r = f.readline()
-            #Si no hay variables guardadas usa la por defecto
             if (r!=''):
                 line = int(r)
             f.close()
@@ -29,7 +27,7 @@ class File:
     def set_stat(self,val):
         self._stat = val
         with open(self._path_stat_file, 'w') as f:
-            #Reescribe la variable de estado
+            #Reescribe
             f.write(str(val))
             f.close()
         pass
